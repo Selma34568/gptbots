@@ -10,7 +10,7 @@ def chat_with_gpt(prompt):
         temperature=0.7,  
         stop=["\n", "User:", "Assistant:"],  
         frequency_penalty=0, 
-        presence_penalty=0.6,  
+        presence_penalty=0.6,   
         custom_instructions="You are a helpful assistant." 
     )
 
