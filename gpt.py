@@ -11,7 +11,7 @@ def chat_with_gpt(prompt):
         stop=["\n", "User:", "Assistant:"],  
         frequency_penalty=0, 
         presence_penalty=0.6,   
-        custom_instructions="You are a helpful assistant." 
+        custom_instructions="You are a helpful assistant."  
     )
 
     return response.choices[0].message.content.strip()
