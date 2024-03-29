@@ -1,31 +1,64 @@
-# GPT Chatbot with OpenAI
-This project demonstrates how to create a simple chatbot using OpenAI's GPT (Generative Pre-trained Transformer) model. The chatbot interacts with users by generating responses based on the input provided.
 
-## Installation
-To run the chatbot locally, follow these steps:
+# Chat with GPT
 
-1. Clone this repository to your local machine.
-2. Install the required Python packages using pip:
+Chat with GPT is a Python application that provides a simple interface to chat with OpenAI's GPT models. This project aims to showcase how to interact with OpenAI's API to create conversational AI applications.
 
-## Usage
-Run the `chat_with_gpt.py` script to start the chatbot. You will be prompted to enter a message, and the chatbot will respond accordingly.
+## Features
 
-## Configuration
-Before running the script, make sure to set your OpenAI API key in the `openai.api_key` variable.
-openai.api_key = "YOUR_API_KEY_HERE"
+- Chat with GPT using a simple text interface.
+- Uses the latest GPT models for improved response quality.
+- Basic session management to maintain conversation context.
 
-# Dependencies
-OpenAI: Python package for accessing OpenAI's GPT models.
+## Getting Started
 
-# Attributes:
-- model: The GPT model to use for generating responses. Default is "text-davinci-002".
-- messages: A list of messages containing user input and previous messages. Default is an empty list.
-- max_tokens: The maximum number of tokens in the response. Default is 50.
-- temperature: Controls the randomness of the response. Default is 0.7.
-- stop: A list of strings indicating when to stop generating the response. Default is ["\n", "User:", "Assistant:"].
-- frequency_penalty: Controls how much the model avoids repeating words. Default is 0.
-- presence_penalty: Controls how much the model avoids generating unlikely words. Default is 0.6.
-- custom_instructions: Custom instructions for the model. Default is "You are a helpful assistant.".
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+### Prerequisites
 
+- Python 3.6+
+- An OpenAI API key
 
+### Installing
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/pbrudny/gptbots.git
+cd gptbots
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Configuration
+
+Before running the application, you need to set up your OpenAI API key. The recommended way is to use an environment variable. Create a `.env` file in the root of your project directory with the following content:
+
+```
+OPENAI_API_KEY=your_api_key_here
+```
+
+Replace `your_api_key_here` with your actual OpenAI API key.
+
+### Running the Application
+
+To start the application, run:
+
+```bash
+python gpt.py
+```
+
+Follow the on-screen instructions to chat with GPT.
+
+## Contributing
+
+Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
