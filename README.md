@@ -18,14 +18,14 @@ openai.api_key = "YOUR_API_KEY_HERE"
 OpenAI: Python package for accessing OpenAI's GPT models.
 
 # Attributes:
-# model: The GPT model to use for generating responses. Default is "text-davinci-002".
-# messages: A list of messages containing user input and previous messages. Default is an empty list.
-# max_tokens: The maximum number of tokens in the response. Default is 50.
-# temperature: Controls the randomness of the response. Default is 0.7.
-# stop: A list of strings indicating when to stop generating the response. Default is ["\n", "User:", "Assistant:"].
-# frequency_penalty: Controls how much the model avoids repeating words. Default is 0.
-# presence_penalty: Controls how much the model avoids generating unlikely words. Default is 0.6.
-# custom_instructions: Custom instructions for the model. Default is "You are a helpful assistant.".
+- model: The GPT model to use for generating responses. Default is "text-davinci-002".
+- messages: A list of messages containing user input and previous messages. Default is an empty list.
+- max_tokens: The maximum number of tokens in the response. Default is 50.
+- temperature: Controls the randomness of the response. Default is 0.7.
+- stop: A list of strings indicating when to stop generating the response. Default is ["\n", "User:", "Assistant:"].
+- frequency_penalty: Controls how much the model avoids repeating words. Default is 0.
+- presence_penalty: Controls how much the model avoids generating unlikely words. Default is 0.6.
+- custom_instructions: Custom instructions for the model. Default is "You are a helpful assistant.".
 
 
 
