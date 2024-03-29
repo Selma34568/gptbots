@@ -13,12 +13,12 @@ Run the `chat_with_gpt.py` script to start the chatbot. You will be prompted to 
 ## Configuration
 
 Before running the script, make sure to set your OpenAI API key in the `openai.api_key` variable.
-
-```python
 openai.api_key = "YOUR_API_KEY_HERE"
 
-Dependencies
+# Dependencies
 OpenAI: Python package for accessing OpenAI's GPT models.
+
+```python
 
 Attributes:
 # model: The GPT model to use for generating responses. Default is "text-davinci-002".
